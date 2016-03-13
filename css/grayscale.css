@@ -41,15 +41,18 @@ h6
     letter-spacing: 1px;
     color: white;
 }
+h5 {
+    font-size: 17px;
+}
 
 p
 {
     margin: 0 0 25px;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 1.6;
     text-align: left;
     color: white;
-    font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+    font-family: calibri;
     font-weight: 100;
 }
 
@@ -116,43 +119,28 @@ a:focus
 }
 */
 
-.navbar-custom .nav li.active
-{
-    background-color: maroon;
-}
 
-/*
-.navbar-custom .nav li
-{
-    -webkit-transition: background .3s ease-in-out;
-    -moz-transition: background .3s ease-in-out;
-    transition: background .3s ease-in-out;
+.top-nav-collapse{
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: blue;
 }
-*/
-.navbar-custom .nav li {
-    background-color:white;
-}
-.navbar-custom .nav li:hover,
-.navbar-custom .nav li:focus {
-    background-color: maroon;
-}
-.navbar-custom .nav li a:hover,
-.navbar-custom .nav li a:focus {
-    background-color: maroon;
-}
-
-.top-nav-collapse
-    {
-        padding: 0;
-        background-color: white;
-				color: white;
+.top-nav-collapse h1 {
+    color: #1d4263;
 }
 .navbar-custom.top-nav-collapse
 {
-    border-bottom: 2px solid maroon;
+    border-bottom: 2px solid rgba(186, 179, 85, 0.98);
     color: white;
 }
-
+.navbar-header h1 {
+    padding: 15px;
+    font-family: Palatino;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0px;
+}
+}
 @media (min-width:767px)
 {
     .navbar
@@ -173,33 +161,12 @@ a:focus
     }
     .navbar-custom.top-nav-collapse
     {
-        border-bottom: 2px solid maroon;
+        border-bottom: 2px solid green;
 				color: white;
 /*        min-height:70px;*/
     }
-    .navbar-custom .nav li:hover,
-    .navbar-custom .nav li:focus {
-        background-color: maroon;
-        border-bottom-style: solid;
-        border-bottom-color: maroon;
-    }
-    .navbar-custom .nav li a:hover,
-    .navbar-custom .nav li a:focus {
-        background-color: maroon;
-    }
-    .navbar-custom .nav li.active
-    {
-        border-bottom: 3px solid;
-        border-bottom-color: maroon;
-        background-color: white;
-    }
+}
 
-}
-#jhu_logo {
-    height: 50px;
-    width: 200px;
-    padding: 5px;
-}
 .page-head{
     display: table;
 /*    width: 60%;*/
@@ -252,7 +219,7 @@ a:focus
     padding-bottom: 40px;
     width: 80%;
     text-align: center;
-    bottom: 15%;
+    bottom: .1%;
     margin-left: 10%
 }
 
@@ -446,6 +413,7 @@ body
 #team-info {
     display: none;
     background-color: rgb(165, 166, 177);
+    width: auto;
 }
 .team-bio{
     float: left;
@@ -464,7 +432,7 @@ body
 }
 .team-bio h1 {
     position: absolute;
-    bottom: 80px;
+    bottom: 90px;
 }
 .team-bio h4 {
     position: absolute;
@@ -482,18 +450,44 @@ body
     display: block;
 }
 #bios{
-    height: 500px;
+    height: 900px;
+    margin: 0px;
 }
 
 .btn-primary-outline {
     background-color: rgba(0, 0, 255, 0);
     border-color: white;
     color: white;
+    margin-bottom: 20px
 }
 .btn-primary-outline:hover {
     background-color: rgb(255, 255, 255);
 }
 
 #padding {
-    height: 100px;
+    height: 100px;   
+}
+
+#customBtn {
+    margin-top: 140px;
+}
+.fa-caret-down {
+    transform: scale(3);
+    color: white;
+}
+#customBtn h4 {
+    margin-bottom: 3px;
+}
+#customBtn:hover{
+    transform: scale(1.1);
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    cursor: pointer;
+}
+
+#bios h1, h2, h3, h4 {
+    font-size: 15px;
+    color: #263566;
 }
