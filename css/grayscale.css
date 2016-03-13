@@ -141,7 +141,7 @@ a:focus
     margin: 0px;
 }
 }
-@media (min-width:767px)
+@media (min-width:851px)
 {
     .navbar
     {
@@ -175,12 +175,12 @@ a:focus
 		margin-left:20%;
 		margin-top: 200px;
 		background-size: 100%;
-		@media (min-width:767px) {
+		@media (min-width:851px) {
 			background-size: 25px;
 		}
 }
 
-@media (max-width:766px){
+@media (max-width:850px){
     .page-head{
         width: 80%;
         margin-left:10%;
@@ -215,21 +215,22 @@ a:focus
 
 .intro-text {
     position: absolute;
-    padding-top: 40px;
-    padding-bottom: 40px;
     width: 80%;
     text-align: center;
-    bottom: .1%;
-    margin-left: 10%
+    margin-left: 10%;
+    margin-top: 90px;
 }
 
-@media (max-width:766px){
+
+/*
+@media (max-width:850px){
     .intro{
         width: 300px;
         height: 160px;
         margin: auto;
     }
 }
+*/
 .non-intro
 {
     display: table;
@@ -238,9 +239,11 @@ a:focus
 		width:60%;
 		margin-left:20%;
 		margin-top: 10px;
-		@media (min-width:767px) {
+/*
+		@media (min-width:851px) {
 			background-size: 25px;
 		}
+*/
 }
 
 #about, #events, #apply {
@@ -249,6 +252,9 @@ a:focus
 
 #bios {
     width: 100%;
+    margin: auto;
+    padding:0;
+    
 }
 
 iframe {
@@ -297,13 +303,15 @@ iframe {
 		padding-bottom: 50px;
 }
 
-@media (max-width:766px){
+/*
+@media (max-width:850px){
     .content-section{
         padding-right: 40px;
         padding-left: 40px;
         padding top:20px;
     }
 }
+*/
 
 .download-section
 {
@@ -319,32 +327,6 @@ iframe {
 }
 
 
-ul.banner-social-buttons
-{
-    margin-top: 0;
-}
-
-@media (max-width:1199px)
-{
-    ul.banner-social-buttons
-    {
-        margin-top: 15px;
-    }
-}
-
-@media (max-width:767px)
-{
-    ul.banner-social-buttons li
-    {
-        display: block;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    ul.banner-social-buttons li:last-child
-    {
-        margin-bottom: 0;
-    }
-}
 
 footer
 {
