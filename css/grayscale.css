@@ -6,17 +6,19 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+/*
 @font-face {
-    font-family: fontin;
+    font-family: Palatino;
     src: url("../fonts/FontinSans_49/Fontin_Sans_R_45b.otf");
 }
+*/
 
 
 body
 {
     width: 100%;
     height: 100%;
-    font-family: fontin;
+    font-family: Palatino;
     color: black;
     background-color: #ffffff;
 }
@@ -35,30 +37,22 @@ h5,
 h6
 {
     margin: 0 0 35px;
-    font-family: fontin;
-    font-weight: 700;
+    font-weight: thin;
     letter-spacing: 1px;
-    color: #d0c116;
+    color: white;
 }
 
 p
 {
     margin: 0 0 25px;
-    font-size: 18px;
-    line-height: 1.5;
+    font-size: 14px;
+    line-height: 1.6;
     text-align: left;
-    color: maroon;
+    color: white;
+    font-family: 'Helvetica Light', 'Helvetica', Arial, sans-serif;
+    font-weight: 100;
 }
 
-@media (min-width:767px)
-{
-    p
-    {
-        margin: 0 0 35px;
-        font-size: 20px;
-        line-height: 1.6;
-    }
-}
 
 a
 {
@@ -85,7 +79,7 @@ a:focus
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: fontin;
+    font-family: Palatino;
 }
 
 .navbar-custom .navbar-brand {
@@ -124,7 +118,7 @@ a:focus
 
 .navbar-custom .nav li.active
 {
-    background-color: #4484C7;
+    background-color: maroon;
 }
 
 /*
@@ -140,11 +134,11 @@ a:focus
 }
 .navbar-custom .nav li:hover,
 .navbar-custom .nav li:focus {
-    background-color: rgb(162, 191, 221);
+    background-color: maroon;
 }
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-    background-color: rgb(162, 191, 221);
+    background-color: maroon;
 }
 
 .top-nav-collapse
@@ -155,7 +149,7 @@ a:focus
 }
 .navbar-custom.top-nav-collapse
 {
-    border-bottom: 2px solid #4484C7;
+    border-bottom: 2px solid maroon;
     color: white;
 }
 
@@ -179,24 +173,24 @@ a:focus
     }
     .navbar-custom.top-nav-collapse
     {
-        border-bottom: 2px solid #4484C7;
+        border-bottom: 2px solid maroon;
 				color: white;
 /*        min-height:70px;*/
     }
     .navbar-custom .nav li:hover,
     .navbar-custom .nav li:focus {
-        background-color: rgba(68, 132, 199, 0.2);
+        background-color: maroon;
         border-bottom-style: solid;
-        border-bottom-color: rgba(68, 132, 199, 0.4);
+        border-bottom-color: maroon;
     }
     .navbar-custom .nav li a:hover,
     .navbar-custom .nav li a:focus {
-        background-color: rgba(68, 132, 199, 0.2);
+        background-color: maroon;
     }
     .navbar-custom .nav li.active
     {
         border-bottom: 3px solid;
-        border-bottom-color: rgba(38, 53, 102, 0.8);
+        border-bottom-color: maroon;
         background-color: white;
     }
 
@@ -244,12 +238,22 @@ a:focus
 */
 
 .intro {
-    height:80%;
-    background: url("../img/jhu_background.jpg") no-repeat center center fixed;  
+    height:100%;
+    background: url("../img/dots.jpg") no-repeat center center fixed;  
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.intro-text {
+    position: absolute;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    width: 80%;
+    text-align: center;
+    bottom: 15%;
+    margin-left: 10%
 }
 
 @media (max-width:766px){
@@ -479,4 +483,17 @@ body
 }
 #bios{
     height: 500px;
+}
+
+.btn-primary-outline {
+    background-color: rgba(0, 0, 255, 0);
+    border-color: white;
+    color: white;
+}
+.btn-primary-outline:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+#padding {
+    height: 100px;
 }
