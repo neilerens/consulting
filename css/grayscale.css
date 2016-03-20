@@ -454,8 +454,18 @@ body
     background-color: rgb(255, 255, 255);
 }
 
-#padding {
-    height: 100px;   
+#sponsors {
+    height: auto;
+    text-align: center;
+    border-top: 1px solid rgba(186, 179, 85, 0.98);
+    margin-bottom: 40px;
+}
+#sponsors h1{
+    color: #263566;
+    padding: 20px;
+}
+.sponsorPic {
+    width: 300px;
 }
 
 #customBtn {
