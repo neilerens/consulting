@@ -396,29 +396,67 @@ body
 }
 
 .bioPic {
-    width:100px;
+    width:100%;
     border-radius: 50%;
 }
 
 #team-info {
     display: none;
-    background-color: rgb(165, 166, 177);
     width: auto;
+    position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   margin-bottom: -20px;
+   padding: 10px;
+   text-align: center;
 }
 .team-bio{
     float: left;
+    width: 15%;
+    position: relative;
 }
+.wrap {
+    overflow: hidden;
+    float: left;
+    margin: 10px;
+}
+
+@media only screen and (max-width : 480px) {
+   /* Smartphone view: 1 tile */
+   .team-bio {
+      width: 50%;
+   }
+}
+@media only screen and (max-width : 650px) and (min-width : 481px) {
+   /* Tablet view: 2 tiles */
+   .team-bio {
+      width: 33.3%;
+   }
+}
+@media only screen and (max-width : 1050px) and (min-width : 651px) {
+   /* Small desktop / ipad view: 3 tiles */
+   .team-bio {
+      width: 25%;
+   }
+}
+@media only screen and (max-width : 1290px) and (min-width : 1051px) {
+   /* Medium desktop: 4 tiles */
+   .team-bio {
+      width: 20%;
+   }
+}
+
+
 .team-bio:hover #team-info{
     display: block;
-    float: left;
-    position: relative;
 }
 
 .team-bio:hover .tilePic{
     -webkit-filter: opacity(.2);
 }
 .tilePic {
-    width: 200px;
+    width: 100%;
 }
 .team-bio h1 {
     position: absolute;
@@ -442,6 +480,7 @@ body
 #bios{
     height: 1100px;
     margin: 0px;
+    border-top: 3px solid rgba(186, 179, 85, 0.98);
 }
 
 .btn-primary-outline {
@@ -496,3 +535,4 @@ body
     font-size: 15px;
     color: #263566;
 }
+
